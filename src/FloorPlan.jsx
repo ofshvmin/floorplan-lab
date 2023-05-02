@@ -1,22 +1,25 @@
-import Bedroom1 from "./Bedroom1"
+import Bedroom from "./Bedroom"
 import Kitchen from "./Kitchen"
 import FullBath from "./FullBath"
-import Bedroom2 from "./Bedroom2"
+
 import LivingRoom from "./LivingRoom"
 import HalfBath from "./HalfBath"
-import Bedroom3 from "./Bedroom3"
+
 
 const FloorPlan = () => {
+  const bedNums = [1, 2, 3]
   return (
     <>
       <h1>Floor Plan</h1>
-        <Bedroom1 />   
+        <Bedroom />   
         <Kitchen />
         <FullBath />
-        <Bedroom2 />
+        {bedNums.map((bedNum, idx) => 
+        <Bedroom key={idx} bedNum = {bedNum}/>
+          )}
         <LivingRoom />
         <HalfBath />
-        <Bedroom3 />
+        <Bedroom />
     </>
   )
 }
