@@ -1,6 +1,6 @@
 const LivingRoom = () => {
   return (
-    <div>
+    <div class="span-3x2">
       <h2>Living Room</h2>
     </div>
   )

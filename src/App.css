@@ -5,27 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
@@ -37,8 +16,10 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+#floorplan {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
 }
 
 div {
@@ -46,3 +27,49 @@ div {
   margin: 5px;
   padding: 5px;
 }
+
+.bedroom {
+  background-color: rgb(27, 182, 243);
+}
+
+.bath {
+  background-color: rgb(100, 158, 14);
+}
+
+.span-2 {
+  grid-column: span 4;
+  grid-row: span 4;
+
+}
+
+.span-3x2 {
+  grid-column: span 4;
+  grid-row: span 6;
+  background-color: brown;
+}
+
+#kitchen {
+  grid-row: span 6;
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr); 
+
+}
+
+#kitchen > div {
+  background-color: orange;
+}
+
+#Full {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+#Half {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+
+

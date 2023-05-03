@@ -3,10 +3,10 @@ import Stove
  from "./Stove"
 const Kitchen = () => {
   return (
-    <div>
-      <h2>Kitchen</h2>
+    <div id="kitchen">
       <Oven />
       <Stove />
+      <h2>Kitchen</h2>
     </div>
   )
 }

@@ -10,7 +10,9 @@ function App() {
 
   return (
     <>
-      <div>
+    <h1>Floor Plan</h1>
+      <div id="floorplan">
+        
         <Floorplan />
       </div>
     </>
